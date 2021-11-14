@@ -5,5 +5,5 @@ services:
     ports:
       - 80:80
     volumes:
-      - ./builds/Web/:/usr/share/caddy
-      - ./builds/Web/build/caddy/Caddyfile:/etc/caddy/Caddyfile
+      - ./:/usr/share/caddy
+      - ./build/caddy/Caddyfile:/etc/caddy/Caddyfile
