@@ -1,0 +1,69 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://start-assets/ui_theme.tres" type="Theme" id=1]
+[ext_resource path="res://src/userInterface/changeSceneButton.tscn" type="PackedScene" id=2]
+[ext_resource path="res://src/userInterface/quit.tscn" type="PackedScene" id=3]
+[ext_resource path="res://src/userInterface/title.tscn" type="PackedScene" id=4]
+[ext_resource path="res://src/userInterface/retryButton.tscn" type="PackedScene" id=5]
+[ext_resource path="res://src/userInterface/userInterface.gd" type="Script" id=6]
+
+[node name="userInterface" type="Control"]
+pause_mode = 2
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme = ExtResource( 1 )
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -144.0
+margin_right = -23.0
+margin_bottom = 40.0
+text = "Score: %s"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PauseOverlay" type="ColorRect" parent="."]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 0.235294 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="title" parent="PauseOverlay" instance=ExtResource( 4 )]
+text = "Paused"
+
+[node name="pauseMenu" type="VBoxContainer" parent="PauseOverlay"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -128.0
+margin_top = -100.0
+margin_right = 128.0
+margin_bottom = 100.0
+
+[node name="retryButton" parent="PauseOverlay/pauseMenu" instance=ExtResource( 5 )]
+margin_right = 256.0
+margin_bottom = 64.0
+
+[node name="changeSceneButton" parent="PauseOverlay/pauseMenu" instance=ExtResource( 2 )]
+margin_top = 68.0
+margin_right = 256.0
+margin_bottom = 132.0
+text = "Main Screen"
+next_scene = "res://src/screens/mainScreen.tscn"
+
+[node name="quit" parent="PauseOverlay/pauseMenu" instance=ExtResource( 3 )]
+margin_top = 136.0
+margin_right = 256.0
+margin_bottom = 200.0
+
+[connection signal="button_up" from="PauseOverlay/pauseMenu/changeSceneButton" to="PauseOverlay/pauseMenu/changeSceneButton" method="_on_button_up"]
