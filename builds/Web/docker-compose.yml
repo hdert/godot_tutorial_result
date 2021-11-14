@@ -1,0 +1,9 @@
+version: "3"
+services:
+  web:
+    image: caddy
+    ports:
+      - 80:80
+    volumes:
+      - ./builds/Web/:/usr/share/caddy
+      - ./builds/Web/build/caddy/Caddyfile:/etc/caddy/Caddyfile
