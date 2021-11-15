@@ -19,7 +19,6 @@ __meta__ = {
 }
 
 [node name="touchScreenButtons" parent="." instance=ExtResource( 7 )]
-pause_mode = 1
 margin_left = 384.0
 margin_top = 200.0
 margin_right = 384.0
