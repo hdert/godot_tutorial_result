@@ -2,6 +2,8 @@ extends Control
 
 onready var scene_tree = get_tree()
 onready var pause_overlay: ColorRect = get_node("PauseOverlay")
+onready var pause_button: TouchScreenButton = get_node("touchScreenButtons/touchScreenButtons/pauseResume/pause")
+onready var resume_button: TouchScreenButton = get_node("touchScreenButtons/touchScreenButtons/pauseResume/resume")
 onready var score: Label = get_node("Label")
 onready var pause_title: Label = get_node("PauseOverlay/title")
 
@@ -27,4 +29,6 @@ func update_interface() -> void:
 func set_paused(value: bool) -> void:
 	paused = value
 	scene_tree.paused = value
+	pause_button.visible = not value
+	resume_button.visible = value
 	pause_overlay.visible = value

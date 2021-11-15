@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="100mm"
+   height="100mm"
+   viewBox="0 0 100 100"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20, custom)"
+   sodipodi:docname="arrowRight.svg"
+   inkscape:export-filename="/home/hdert/Documents/repos/godot_tutorial_result/start-assets/arrowRight.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     width="100mm"
+     inkscape:snap-nodes="false"
+     inkscape:zoom="1.2580294"
+     inkscape:cx="189.18477"
+     inkscape:cy="193.15924"
+     inkscape:window-width="318"
+     inkscape:window-height="1080"
+     inkscape:window-x="1600"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g784"
+       transform="translate(-0.69363599,0.04147594)">
+      <path
+         style="fill:#ffffff;stroke-width:0.794894"
+         d="m 237.04838,279.70476 c -12.83069,-6.35106 -20.81707,-41.21332 -20.8277,-90.91744 -0.008,-37.36569 4.29162,-65.21459 12.4884,-80.88809 5.75692,-11.008102 12.22025,-13.521198 26.94983,-10.478721 34.43677,7.113111 91.62184,45.400291 110.34464,73.879141 2.29938,3.49754 4.81766,7.96882 5.59619,9.93618 4.31492,10.90395 -0.89474,22.60452 -17.82694,40.03822 -35.8335,36.89484 -97.68313,67.85595 -116.72442,58.43071 z"
+         id="path500"
+         transform="scale(0.26458333)" />
+      <rect
+         id="rect418"
+         width="69.950302"
+         height="20.383123"
+         x="2.6867771"
+         y="38.815369"
+         style="fill:#ffffff;stroke-width:0.286845"
+         ry="7.595706" />
+      <g
+         id="g416"
+         transform="matrix(1.3322803,0,0,1.3322803,-20.042298,-15.669231)">
+        <rect
+           id="rect31"
+           width="45.955429"
+           height="13.391152"
+           x="19.021124"
+           y="41.849884"
+           style="stroke-width:0.188449"
+           ry="4.9901705" />
+        <path
+           sodipodi:type="star"
+           id="path231"
+           inkscape:flatsided="true"
+           sodipodi:sides="3"
+           sodipodi:cx="287.00192"
+           sodipodi:cy="130.0266"
+           sodipodi:r1="86.523262"
+           sodipodi:r2="43.261631"
+           sodipodi:arg1="2.0943951"
+           sodipodi:arg2="3.1415927"
+           inkscape:rounded="0.19173506"
+           inkscape:randomized="0"
+           d="m 243.74029,204.95794 c -24.88431,-14.36697 -24.88431,-135.495721 0,-149.862687 24.88432,-14.366965 129.78489,46.197407 129.78489,74.931347 0,28.73393 -104.90057,89.2983 -129.78489,74.93134 z"
+           transform="matrix(0.17698632,0,0,0.20065395,20.016516,23.200501)"
+           inkscape:transform-center-x="-3.8283572" />
+      </g>
+    </g>
+  </g>
+</svg>

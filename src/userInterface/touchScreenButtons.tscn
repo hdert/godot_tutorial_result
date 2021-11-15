@@ -1,0 +1,79 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://start-assets/arrowPressedRight.png" type="Texture" id=1]
+[ext_resource path="res://start-assets/arrowPressedLeft.png" type="Texture" id=2]
+[ext_resource path="res://start-assets/arrowLeft.png" type="Texture" id=3]
+[ext_resource path="res://start-assets/arrowRight.png" type="Texture" id=4]
+[ext_resource path="res://start-assets/arrowUp.png" type="Texture" id=5]
+[ext_resource path="res://start-assets/arrowPressedUp.png" type="Texture" id=6]
+[ext_resource path="res://start-assets/pause.png" type="Texture" id=8]
+[ext_resource path="res://start-assets/resume.png" type="Texture" id=9]
+
+[node name="touchScreenButtons" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="touchScreenButtons" type="CanvasLayer" parent="."]
+
+[node name="leftRightButtons" type="VBoxContainer" parent="touchScreenButtons"]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_top = -378.0
+margin_right = 755.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="leftButton" type="TouchScreenButton" parent="touchScreenButtons/leftRightButtons"]
+normal = ExtResource( 3 )
+pressed = ExtResource( 2 )
+passby_press = true
+action = "move_left"
+visibility_mode = 1
+
+[node name="rightButton" type="TouchScreenButton" parent="touchScreenButtons/leftRightButtons"]
+position = Vector2( 377, 0 )
+normal = ExtResource( 4 )
+pressed = ExtResource( 1 )
+passby_press = true
+action = "move_right"
+visibility_mode = 1
+
+[node name="jumpButton" type="VBoxContainer" parent="touchScreenButtons"]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -377.0
+margin_top = -378.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="upButton" type="TouchScreenButton" parent="touchScreenButtons/jumpButton"]
+normal = ExtResource( 5 )
+pressed = ExtResource( 6 )
+passby_press = true
+action = "jump"
+visibility_mode = 1
+
+[node name="pauseResume" type="VBoxContainer" parent="touchScreenButtons"]
+margin_right = 64.0
+margin_bottom = 64.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="pause" type="TouchScreenButton" parent="touchScreenButtons/pauseResume"]
+normal = ExtResource( 8 )
+pressed = ExtResource( 8 )
+action = "pause"
+
+[node name="resume" type="TouchScreenButton" parent="touchScreenButtons/pauseResume"]
+visible = false
+normal = ExtResource( 9 )
+pressed = ExtResource( 9 )
+action = "pause"

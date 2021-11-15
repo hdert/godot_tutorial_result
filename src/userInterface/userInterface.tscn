@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://start-assets/ui_theme.tres" type="Theme" id=1]
 [ext_resource path="res://src/userInterface/changeSceneButton.tscn" type="PackedScene" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://src/userInterface/title.tscn" type="PackedScene" id=4]
 [ext_resource path="res://src/userInterface/retryButton.tscn" type="PackedScene" id=5]
 [ext_resource path="res://src/userInterface/userInterface.gd" type="Script" id=6]
+[ext_resource path="res://src/userInterface/touchScreenButtons.tscn" type="PackedScene" id=7]
 
 [node name="userInterface" type="Control"]
 pause_mode = 2
@@ -16,6 +17,13 @@ script = ExtResource( 6 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="touchScreenButtons" parent="." instance=ExtResource( 7 )]
+pause_mode = 1
+margin_left = 384.0
+margin_top = 200.0
+margin_right = 384.0
+margin_bottom = 200.0
 
 [node name="Label" type="Label" parent="."]
 anchor_left = 1.0

@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://start-assets/new_tileset.tres" type="TileSet" id=1]
 [ext_resource path="res://src/actors/player.tscn" type="PackedScene" id=2]
@@ -7,9 +7,7 @@
 [ext_resource path="res://src/objects/coin.tscn" type="PackedScene" id=5]
 [ext_resource path="res://src/objects/portal.tscn" type="PackedScene" id=6]
 [ext_resource path="res://src/levels/level02.tscn" type="PackedScene" id=7]
-[ext_resource path="res://start-assets/ui_theme.tres" type="Theme" id=8]
 [ext_resource path="res://src/userInterface/userInterface.tscn" type="PackedScene" id=9]
-[ext_resource path="res://src/userInterface/userInterface.gd" type="Script" id=10]
 
 [node name="level01" type="Node2D"]
 position = Vector2( 400, 0 )
@@ -23,6 +21,7 @@ anchor_bottom = 1.0
 margin_right = 1920.0
 margin_bottom = 1080.0
 texture = ExtResource( 4 )
+stretch_mode = 2
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -76,14 +75,6 @@ position = Vector2( 1700, 838 )
 [node name="UserInterface" type="CanvasLayer" parent="."]
 layer = 128
 
-[node name="userInterface" type="Control" parent="UserInterface" instance=ExtResource( 9 )]
-pause_mode = 2
-anchor_right = 1.0
-anchor_bottom = 1.0
-theme = ExtResource( 8 )
-script = ExtResource( 10 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+[node name="userInterface" parent="UserInterface" instance=ExtResource( 9 )]
 
 [editable path="player"]
